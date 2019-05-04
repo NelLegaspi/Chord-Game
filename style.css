@@ -1,0 +1,204 @@
+body, .container-start .result h2, .container-start .result h4.rong, .container-start .result h4.corr {
+  margin: 0;
+}
+
+.container-start .result button, .container-start .game button#cont, .container-start .game .btn-g, .container-start #btn {
+  background-color: #59b300;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  -webkit-transition: background-color 300ms;
+  transition: background-color 300ms;
+  letter-spacing: .2em;
+}
+
+.container-start .result, .container-start .game {
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  left: 0;
+}
+
+.container-start .result.show, .container-start .game.show {
+  opacity: 1;
+  z-index: 3;
+}
+
+.container-start .result button:hover, .container-start .game button#cont:hover, .container-start .game .btn-g:hover, .container-start #btn:hover {
+  cursor: pointer;
+}
+
+.container-start {
+  min-width: 320px;
+  width: 90%;
+  height: 100vh;
+  background-color: #99ddff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@-webkit-keyframes shakeit {
+  from {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  to {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@keyframes shakeit {
+  from {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  to {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+.container-start .result {
+  opacity: 0;
+  -webkit-transition: opacity 500ms linear .5s;
+  transition: opacity 500ms linear .5s;
+}
+
+.container-start .result h2 {
+  color: white;
+}
+
+.container-start .result h4.rong {
+  color: #ff3333;
+}
+
+.container-start .result h4.corr {
+  color: #009933;
+}
+
+.container-start .result button {
+  padding: 10px 40px;
+}
+
+.container-start .result button:hover {
+  background-color: #009933;
+}
+
+.container-start .game.wrong img {
+  -webkit-animation-name: shakeit;
+          animation-name: shakeit;
+  -webkit-animation-duration: 150ms;
+          animation-duration: 150ms;
+}
+
+.container-start .game {
+  opacity: 0;
+  -webkit-transition: opacity 500ms linear .3s;
+  transition: opacity 500ms linear .3s;
+}
+
+.container-start .game button#cont {
+  padding: 5px 20px;
+}
+
+.container-start .game button#cont:hover {
+  background-color: #009933;
+}
+
+.container-start .game .btn-g {
+  margin: 40px 3px 20px 3px;
+  padding: 10px 30px;
+}
+
+.container-start .game .btn-g:hover {
+  background-color: #009933;
+}
+
+.container-start .game .btn-g.correct {
+  background-color: #006622;
+}
+
+.container-start .game .btn-g.wrong {
+  background-color: #ff3333;
+}
+
+.container-start .start {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  z-index: 64;
+  position: relative;
+  top: 30%;
+}
+
+.container-start h1.title {
+  color: white;
+  margin: 0;
+  font-family: 'ink-free';
+}
+
+.container-start h1.title span {
+  color: #ff8533;
+}
+
+.container-start #btn {
+  padding: 10px 80px;
+  margin-top: 100px;
+}
+
+.container-start #btn:hover {
+  background-color: #009933;
+}
+
+@media screen and (max-width: 330px) {
+  div#start .game, .game.show, .result.show, .start {
+    top: 20%;
+  }
+  div#start .game .btn-g {
+    padding: 10px 20px;
+  }
+  .game.show .btn-g {
+    padding: 10px 20px;
+  }
+  .result.show h1 {
+    font-size: 1.3em;
+  }
+  .start #btn {
+    padding: 10px 50px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .start, .result.show, .game.show .btn-g, .game.show button#cont, .game.show h2.yey, .game.show h2.pfft {
+    font-size: 2em;
+    letter-spacing: .25em;
+  }
+  .start h1.title {
+    letter-spacing: .1em;
+  }
+  .start button#btn {
+    font-size: 1.5em;
+    padding: 30px 200px;
+    margin-top: 250px;
+    border-radius: 20px;
+  }
+  .result.show button.reset {
+    font-size: 1.5em;
+    padding: 30px 150px;
+    border-radius: 20px;
+  }
+  .game.show img {
+    height: 250px;
+    width: 500px;
+  }
+  .game.show .btn-g {
+    padding: 20px 80px;
+    margin: 100px 30px 30px;
+    border-radius: 15px;
+  }
+  .game.show button#cont {
+    padding: 20px 60px;
+    font-size: 2em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
