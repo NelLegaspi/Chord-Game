@@ -59,7 +59,9 @@ body, .container-start div.result h2, .container-start div.result h4.rong, .cont
 }
 
 .container-start div.result {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition-duration: 500ms;
 }
 
 .container-start div.result h2 {
@@ -83,7 +85,8 @@ body, .container-start div.result h2, .container-start div.result h4.rong, .cont
 }
 
 .container-start div.result.show {
-  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 
 .container-start div.game.wrong img {
